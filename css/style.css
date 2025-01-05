@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5; /* Added line-height to improve readability */
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: linear-gradient(135deg, #56ccf2, #6a82fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-dictionary {
+    background: #fff;
+    width: 50%;
+    min-height: 70vh;
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.box-dictionary:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.box-dictionary h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    letter-spacing: 1px;
+}
+
+#pena {
+    width: 40px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.inputs label {
+    font-size: 2rem;
+    color: #34495e;
+    font-weight: 600;
+}
+
+input, button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+input {
+    background-color: #f7f7f7;
+    border: 2px solid #ddd;
+}
+
+input:focus {
+    border: 2px solid #3498db;
+    outline: none;
+    background-color: #fff;
+}
+
+button {
+    background-color: #f39c12;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+#resultContainer {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2c3e50;
+    text-align: center;
+}
+
+#book {
+    position: absolute;
+    top: 73%;
+    left: 20%;
+    width: 120px;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+}
+
+#book:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 960px) {
+    .box-dictionary h1 {
+        font-size: 4.5rem;
+    }
+
+    .inputs {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .box-dictionary {
+        width: 70%;
+    }
+    
+    .box-dictionary h1 {
+        font-size: 4rem;
+    }
+
+    #book {
+        left: 5%;
+    }   
+}
+
+@media only screen and (max-width: 550px) {
+    .box-dictionary {
+        width: 85%;
+    }
+    
+    .box-dictionary h1 {
+        font-size: 3.5rem;
+    }
+
+    #book {
+        left: 2%;
+    }    
+}
+/* Styles for the footer */
+/* Footer styling */
+footer.footer-button {
+    font-size: 20px; /* Make the text bigger */
+    text-align: center;
+    color: white; /* Text color */
+    background-color: #007BFF; /* Button-like blue background */
+    padding: 15px 30px; /* Add padding around the text */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Make it look clickable */
+    margin-top: 30px; /* Space it out a bit from the dictionary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for button effect */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+footer.footer-button:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+    font-family: 'Open Sans', sans-serif; /* Ensure text uses the correct font */
+    font-weight: bold; /* Make text bold */
+}
+
+
